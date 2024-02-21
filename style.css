@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+.header{
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #404040;
+    color: black;
+    padding: 10px;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+      top: 0;
+    z-index: 1000;
+}
+.nav-right{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.nav-logo{
+    background-image: url("Shop-Logo1.png");
+    background-size: cover;
+    height: 55px;
+    width: 60px;
+}
+.nav-left{
+    height: 55px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 30px;
+}
+.hover-text{
+    align-items: center;
+    background-color: hidden;
+    border: 2px solid transparent;
+    border-radius: 24px;
+    padding: 4px 10px;
+}
+.hover-text a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #c5aa6a;;
+    text-decoration: none;
+    font-family: "SST",helvetica,arial,sans-serif;
+}
+.hover-text:hover {
+    cursor: pointer;
+    background-color: #5f4c4c;
+}
+/* hero section*/
+.hero-message {
+    background-image: url("shop-hero1.jpg");
+    background-repeat: no-repeat;
+    background-size: content;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 65px;
+}
+
+.hero-message p {
+    height: 40px;
+    font-size: 1.45rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+/* about section*/
+.about-section{
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  0 0 10px; 
+    border-radius: 10px;
+    background-color: #e0d9c5;
+    position: relative;
+      left: 10%;
+      right:10%;
+}
+.message {
+    width: 60%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px; 
+}
+#free-delivery {
+    width: 40%;
+    background-image: url("freedelivery.jpg");
+    background-size: cover; 
+    height: 300px;
+    position: relative;
+     top: 40px;
+}
+
+/* categories section*/
+.categories-section{
+    margin-top: 30px;
+}
+.categories-tittle{
+    text-align: center;
+    margin-top: 20px;
+}
+.product-boxs{
+    height: 920px;
+    width: 100vph;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 150px;
+    
+}
+.product-img{
+    height: 300px;
+    background-size: cover;
+    width: 24%;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: opacity .4s ease;
+    opacity: 1;
+    position: relative;
+}
+.category-name-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 93%;
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0 0 10px 10px; 
+}
+
+/*delivery section */
+.delivery-section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.delivery-tittle{
+    text-align: center;
+    margin-top: 20px;
+}
+.containers-div{
+    width: 90%;
+    height: 370px;
+    margin-top: 20px;
+    box-shadow:  0 0 10px; 
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+      left: 5%;
+      right: 5%;
+}
+.container1{
+    background-image: url("delivery-img1.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 370px;
+    border-radius: 10px;
+}
+.container2{
+    background-image: url("delivery-img2.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 370px;
+    border-radius: 10px;
+}
+
+/* contact section*/
+.contact-section{
+    margin-top: 30px;
+}
+.contact-tittle{
+    text-align: center;
+    margin-top: 20px;
+}
+.map-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box{
+    height: 400px;
+    width: 500px;
+    background-color: #ebebeb;
+}
+.contact-box p {
+    margin-left: 60px; 
+    margin-top: 50px;
+}
+
+/* footer section */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #404040;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 768px) {
+    .nav-left {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .hover-text {
+        margin-bottom: 10px;
+    }
+    .product-boxs {
+        padding: 10px;
+    }
+    .product-img {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .contact-box p {
+        margin-left: 20px;
+    }
+}
